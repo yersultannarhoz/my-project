@@ -8,5 +8,6 @@ public interface StudentService {
 
     List<Student> getAllStudents();
     void saveStudents(Student student);
+    Student getStudentById(Long id);
 
 }

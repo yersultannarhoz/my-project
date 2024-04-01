@@ -28,4 +28,9 @@ public class StudentController {
         studentService.saveStudents(student);
     }
 
+    @GetMapping("/{id}")
+    public Student getStudentById(@PathVariable Long id) {
+        return studentService.getStudentById(id);
+    }
+
 }
